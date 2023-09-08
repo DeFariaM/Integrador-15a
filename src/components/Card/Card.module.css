@@ -1,49 +1,43 @@
-
-.container{
- width: 300px;
- height: auto;
- border-radius: 12px;
- display: inline-block;
- flex-direction: column;
-margin: 2em;
-padding: 0.25em;
-background-image: url(../assets/HD-wallpaper-portal-morty-rick.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-
+.container {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  display: inline-block;
+  flex-direction: column;
+  margin: 2em;
+  padding: 0.25em;
+  background-image: url(../assets/HD-wallpaper-portal-morty-rick.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .images {
-    border-radius: 50%;
-    width: 95%;
+  border-radius: 50%;
+  width: 70%;
 }
 
-h2{
-    margin:.25em;
-    background-color: rgba(17, 117, 39, 0.87);
-    border-radius: 12px;
-    color:rgb(145, 235, 12);
-       
+h2 {
+  margin: 0.25em;
+  background-color: rgba(17, 117, 39, 0.87);
+  border-radius: 12px;
+  color: rgb(145, 235, 12);
 }
 
-.link{
-    text-decoration: none;
+.link {
+  text-decoration: none;
 }
 
-
-
-.btn{
-    margin:0.35em;
-    background-color: rgba(17, 117, 38, 0.705);
-    border: none;
-    color: rgb(145, 235, 12);
-    width: 15%;
-    height: 20px;
-    border-radius: 15px;
-    
+.btn {
+  margin: 0.35em;
+  background-color: rgba(17, 117, 38, 0.705);
+  border: none;
+  color: rgb(145, 235, 12);
+  width: 15%;
+  height: 20px;
+  border-radius: 15px;
 }
 
-.btn:hover{
-    opacity: 80%;
-    cursor:pointer;
+.btn:hover {
+  opacity: 80%;
+  cursor: pointer;
 }

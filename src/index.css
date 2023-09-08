@@ -12,8 +12,8 @@ body {
   /*  background-color: black; */
   box-sizing: border-box;
   background-image: url(./components/assets/cambio2.jpg);
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-repeat: repeat-y;
 }
 
 code {

@@ -15,7 +15,7 @@
 
 .srcBtn {
   margin-left: 10px;
-  width: 60px;
+  width: 65px;
   height: 37px;
   border: none;
   background-color: rgba(10, 192, 34, 0.911);
@@ -23,6 +23,7 @@
   border-radius: 12px;
   text-align: center;
   font-weight: 540;
+  font-size: 15px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -50,7 +51,8 @@
   margin: 0.5em;
   padding: 0.5em;
   border-radius: 12px;
-  height: 30px;
+  height: 32px;
+  font-size: 15px;
 }
 
 .links:hover {

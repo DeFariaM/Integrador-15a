@@ -3,6 +3,8 @@ import Card from "../Card/Card";
 import { connect } from "react-redux";
 import { filterCards, orderCards } from "../../redux/actions";
 import { useDispatch } from "react-redux";
+import styles from "../Favorites/Favorites.module.css";
+const { select, selectWrapper } = styles;
 
 const Favorites = (props) => {
   const { myFavorites, onClose } = props;
@@ -20,17 +22,19 @@ const Favorites = (props) => {
 
   return (
     <div>
-      <select onChange={handleOrder} name="" id="">
-        <option value="A">Ascendente</option>
-        <option value="D">Descendente</option>
-      </select>
+      <div className={selectWrapper}>
+        <select className={select} onChange={handleOrder} name="" id="">
+          <option value="A">Ascendente</option>
+          <option value="D">Descendente</option>
+        </select>
 
-      <select onChange={handleFilter} name="" id="">
-        <option value="Male">Male</option>
-        <option value="Female">Female</option>
-        <option value="Genderless">Genderless</option>
-        <option value="unknown">unknown</option>
-      </select>
+        <select className={select} onChange={handleFilter} name="" id="">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Genderless">Genderless</option>
+          <option value="unknown">unknown</option>
+        </select>
+      </div>
 
       {myFavorites.map((char) => {
         return (
