@@ -18,9 +18,7 @@ export default function SearchBar(props) {
           {" "}
           Home{" "}
         </NavLink>
-        <NavLink to="/" className={links}>
-          Log Out
-        </NavLink>
+
         <NavLink to={PATHROUTES.ABOUT} className={links}>
           {" "}
           About{" "}
