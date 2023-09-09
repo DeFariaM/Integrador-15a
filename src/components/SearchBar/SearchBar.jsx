@@ -2,7 +2,19 @@ import styles from "./SearchBar.module.css";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import PATHROUTES from "../../Helpers/PathRoutes.helper";
-let { search, srcBtn, links, linksCont, inputCont } = styles;
+import Logo from "../assets/logo.png";
+import littleLogo from "../assets/littleLogo.png";
+let {
+  search,
+  srcBtn,
+  links,
+  linksCont,
+  inputCont,
+  wrapper,
+  logo,
+  logoWrap,
+  smallLogo,
+} = styles;
 
 export default function SearchBar(props) {
   const { onSearch } = props;
@@ -12,7 +24,11 @@ export default function SearchBar(props) {
     setId(event.target.value);
   };
   return (
-    <div>
+    <div className={wrapper}>
+      <div className={logoWrap}>
+        <img className={logo} src={Logo} alt="Logo Rick y Morty" />
+        <img className={smallLogo} src={littleLogo} />
+      </div>
       <div className={linksCont}>
         <NavLink to={PATHROUTES.HOME} className={links}>
           {" "}
@@ -28,6 +44,7 @@ export default function SearchBar(props) {
           Favorites{" "}
         </NavLink>
       </div>
+
       <div className={inputCont}>
         <input
           type="search"

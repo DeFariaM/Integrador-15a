@@ -44,13 +44,13 @@ function Card(props) {
         </button>
       ) : (
         <button onClick={handleFavorite} className={btn}>
-          🤍
+          ​🤍​
         </button>
       )}
       <div>
         {location.pathname !== "/favorites" && (
           <button onClick={() => onClose(id)} className={btn}>
-            X
+            <strong>​X​</strong>
           </button>
         )}
       </div>

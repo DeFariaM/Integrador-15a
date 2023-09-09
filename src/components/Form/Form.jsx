@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 import validation from "./validation";
 import styles from "./Form.module.css";
-import Rick from "../assets/Rick_and_Morty.svg";
-import bg1 from "../assets/bg1.png";
+import bg1 from "../assets/inicio3.png";
 
-const { contenedor, input, btn, label, error, contenedorInput, imgLogin } =
-  styles;
+const {
+  contenedor,
+  input,
+  btn,
+  label,
+  error,
+  contenedorInput,
+  imgLogin,
+  wrapperAll,
+  imgW,
+} = styles;
 
 export const Form = (props) => {
   const { login } = props;
@@ -34,46 +42,49 @@ export const Form = (props) => {
   };
 
   return (
-    <div className={contenedor}>
-      {/*       <img src={Rick} className={imgLogin}></img> */}
-      <img src={bg1} className={imgLogin}></img>
-      <form>
-        <div className={contenedorInput}>
-          <label className={label} htmlFor="email">
-            Email:
-          </label>
-          <br />
-          <input
-            type="text"
-            name="email"
-            value={userData.email}
-            onChange={handleChange}
-            className={input}
-          />
-          <br />
-          <span className={errors.email ? error : null}>{errors.email}</span>
+    <div className={wrapperAll}>
+      <div className={contenedor}>
+        <div className={imgW}>
+          <img src={bg1} className={imgLogin}></img>
         </div>
-        <div className={contenedorInput}>
-          <label className={label} htmlFor="password">
-            Password:
-          </label>
-          <br />
-          <input
-            type="text"
-            name="password"
-            value={userData.password}
-            onChange={handleChange}
-            className={input}
-          />
-          <br />
-          <span className={errors.password ? error : null}>
-            {errors.password}
-          </span>
-        </div>
-        <button className={btn} type="submit" onClick={handleSubmit}>
-          Log In
-        </button>
-      </form>
+        <form>
+          <div className={contenedorInput}>
+            <label className={label} htmlFor="email">
+              Email:
+            </label>
+
+            <input
+              type="text"
+              name="email"
+              value={userData.email}
+              onChange={handleChange}
+              className={input}
+            />
+            <br />
+            <span className={errors.email ? error : null}>{errors.email}</span>
+          </div>
+          <div className={contenedorInput}>
+            <label className={label} htmlFor="password">
+              Password:
+            </label>
+
+            <input
+              type="text"
+              name="password"
+              value={userData.password}
+              onChange={handleChange}
+              className={input}
+            />
+            <br />
+            <span className={errors.password ? error : null}>
+              {errors.password}
+            </span>
+          </div>
+          <button className={btn} type="submit" onClick={handleSubmit}>
+            Log In
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
