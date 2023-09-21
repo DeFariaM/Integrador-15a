@@ -1,9 +1,12 @@
-import styles from "./Card.module.css";
-import { NavLink, useLocation } from "react-router-dom";
-const { btn, images, link } = styles;
-import { connect } from "react-redux";
+//actions
 import { addFav, removeFav } from "../../redux/actions";
+//hooks/devTools
+import { connect } from "react-redux";
 import { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+//styles
+import styles from "./Card.module.css";
+const { btn, images, link } = styles;
 
 function Card(props) {
   const {
@@ -50,7 +53,7 @@ function Card(props) {
       <div>
         {location.pathname !== "/favorites" && (
           <button onClick={() => onClose(id)} className={btn}>
-            <strong>​X​</strong>
+            <strong>X</strong>
           </button>
         )}
       </div>
