@@ -20,7 +20,7 @@ function App() {
 
   //onSearch => Nav
   function onSearch(id) {
-    axios(`https://rickandmortyapi.com/api/character/${id}`)
+    axios(`http://localhost:3001/rickandmorty/character/${id}`)
       .then(({ data }) => {
         const repeat = characters.some((el) => el.id === data.id);
         if (data.id) {
@@ -60,6 +60,7 @@ function App() {
 
   //Render del navBar
   const location = useLocation();
+  console.log(characters);
 
   return (
     <div className="App">
