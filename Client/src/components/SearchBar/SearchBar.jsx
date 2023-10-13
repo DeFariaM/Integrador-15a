@@ -23,6 +23,7 @@ export default function SearchBar(props) {
   const handleChange = (event) => {
     setId(event.target.value);
   };
+
   return (
     <div className={wrapper}>
       <div className={logoWrap}>
