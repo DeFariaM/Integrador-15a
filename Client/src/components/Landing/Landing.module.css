@@ -4,14 +4,16 @@
   height: 100vh;
 }
 
-h1 {
+h1,
+h3 {
   font-family: var(--font-family);
   color: var(--font-color);
   margin-bottom: 0;
 }
 
 @media (max-width: 950px) {
-  h1 {
+  h1,
+  h3 {
     width: 50%;
     height: auto;
     margin-left: auto;
@@ -20,7 +22,8 @@ h1 {
 }
 
 @media (max-width: 450px) {
-  h1 {
+  h1,
+  h3 {
     width: 100%;
     height: auto;
     margin-left: auto;

@@ -1,14 +1,20 @@
-import React from 'react'
-import styles from './About.module.css'
+import React from "react";
+import styles from "./About.module.css";
+import AboutImg from "../assets/inicio2.png";
 
-const {miP} = styles;
+const { miP } = styles;
 
 const About = () => {
   return (
     <div>
-        <p className={miP}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores cumque ipsam rem officiis itaque tenetur, a minus excepturi doloremque sint vel incidunt iusto doloribus pariatur, nam obcaecati corporis quas maxime.</p>
+      <h1>¡Hola!</h1>
+      <h3>
+        Soy María De Faría, full stack developer y entusiasta del increíble
+        mundo de la programación, gracias por estar aquí!
+      </h3>
+      <img src={AboutImg} alt="rick-and-morty" className={miP} />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

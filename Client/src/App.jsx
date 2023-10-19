@@ -84,7 +84,6 @@ function App() {
 
   //Render del navBar
   const location = useLocation();
-  console.log(characters);
 
   return (
     <div className="App">

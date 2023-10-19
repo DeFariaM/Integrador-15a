@@ -1,3 +1,21 @@
-.miP{
-    color:aqua;
+.miP {
+  width: 420px;
+}
+
+@media (max-width: 950px) {
+  .miP {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .miP {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
