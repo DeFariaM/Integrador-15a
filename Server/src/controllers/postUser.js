@@ -8,7 +8,7 @@ const postUser = async (req, res) => {
     }
 
     const user = await User.findOrCreate({
-      where: { email: email, password: password },
+      where: { email, password },
     });
     return res.json(user);
   } catch (error) {
