@@ -8,6 +8,7 @@ const Landing = (props) => {
   const { login } = props;
   return (
     <div className={contains}>
+      <h1>¡Bienvenidos al buscador de Rick y Morty!</h1>
       <Form login={login} />
     </div>
   );
